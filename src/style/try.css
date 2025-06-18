@@ -1,0 +1,150 @@
+/* .lo {
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+.inner{
+    background-color: white;
+    width: 50%;
+} */
+
+.lo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* רקע כהה */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 20px; /* רווחים פנימיים */
+}
+
+.inner {
+    background-color: white;
+    width: 45%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה עדינה */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f06292; /* ורוד בהיר */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #880e4f; /* ורוד כהה */
+}
+
+.flower-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flower-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.flower-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flower-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #880e4f; /* ורוד כהה */
+    margin-bottom: 10px;
+}
+
+.flower-description, .flower-price {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* .flower-ingredients {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+} */
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 10px;
+ 
+}
+/* ממ */
+.flower-ingredients {
+    display: flex;
+    flex-wrap: nowrap; /* אין מעבר שורות, כל המרכיבים יהיו בשורה אחת */
+    justify-content: center; /* למרכז את התוכן */
+    gap: 10px; /* רווח בין הפריטים */
+    margin-top: 10px;
+    padding: 10px 0; /* מעט ריפוד כדי למנוע צפיפות */
+}
+
+
+.ingredient-item {
+    border: 1px solid #880e4f; 
+    /* גבול פרח */
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #f8e1f1;
+     /* צבע רקע רך */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    /* הצללה עדינה */
+    transition: background-color 0.3s;
+    white-space: nowrap; 
+    /* מונע מעבר שורות בתוך כל פרח */
+}
+
+
+/*  צצ*/
+
+/* .ingredient-item {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+    flex-shrink: 0; 
+} */
+
+.flower-image img {
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* הצללה עדינה על התמונה */
+}

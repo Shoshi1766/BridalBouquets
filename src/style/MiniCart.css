@@ -1,0 +1,32 @@
+.mini-cart {
+    position: fixed;
+    bottom: 10%;
+    /* top: 10%; */
+    right: 0;
+    width: 300px;
+    height: 100%;  /* גובה קבוע של הקומפוננטה */
+    padding: 20px;
+    background-color: #f3b2c8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+    transition: height 0.3s ease-in-out, overflow-y 0.3s ease-in-out;  /* אנימציה חלקה לגובה ולגלגלת */
+    overflow-y: auto;  /* גלגלת אנכית אם התוכן חורג */
+}
+
+/* שינוי מראה הגלגלת */
+.mini-cart::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* צבע הגלגלת */
+.mini-cart::-webkit-scrollbar-thumb {
+    background-color: #888;
+    color: rgb(201, 252, 201);
+    border-radius: 4px;
+}
+
+/* צבע הגלגלת בהובר */
+.mini-cart::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
