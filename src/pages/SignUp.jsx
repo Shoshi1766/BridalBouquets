@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import { httpAddUser } from "../api/UserService";
+import { httpAddUser } from "../api/userService";
 import { userIn } from "../features/userSlice";
 import { Box, Button, TextField, Typography, Container, Paper } from "@mui/material";
 
