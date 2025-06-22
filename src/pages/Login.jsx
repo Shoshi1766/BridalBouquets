@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import { httpCheckUser } from "../api/UserService";
+import { httpCheckUser } from "../api/userService";
 import { userIn } from "../features/userSlice";
 import { Box, Button, TextField, Typography, Container, Paper, InputAdornment, IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
