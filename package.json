@@ -16,7 +16,6 @@
     "@mui/joy": "^5.0.0-beta.52",
     "@mui/material": "^6.4.8",
     "@reduxjs/toolkit": "^2.5.1",
-    "@toolpad/core": "^0.13.0",
     "axios": "^1.7.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
